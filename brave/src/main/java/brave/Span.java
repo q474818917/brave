@@ -96,7 +96,7 @@ public abstract class Span implements SpanCustomizer {
    * example, if kind is {@link Kind#SERVER} and reported in v1 Zipkin format, the span's start
    * timestamp is implicitly annotated as "sr" and that plus its duration as "ss".
    */
-  public abstract Span kind(@Nullable Kind kind);
+  public abstract Span kind(Kind kind);
 
   /** {@inheritDoc} */
   @Override public abstract Span annotate(String value);
