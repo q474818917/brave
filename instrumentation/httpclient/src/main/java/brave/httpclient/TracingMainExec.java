@@ -24,6 +24,7 @@ import org.apache.http.protocol.HttpContext;
  * Main exec is the first in the execution chain, so last to execute. This creates a concrete http
  * request, so this is where the span is started.
  */
+// BRAVE6 consider how to lazy classify spans as remote more generically
 class TracingMainExec implements ClientExecChain { // not final for subclassing
   static final Setter<HttpRequestWrapper, String> SETTER = // retrolambda no likey
       new Setter<HttpRequestWrapper, String>() {
