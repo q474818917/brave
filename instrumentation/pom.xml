@@ -17,7 +17,8 @@
   </properties>
 
   <modules>
-    <module>benchmarks</module>
+    <module>dubbo-rpc</module>
+    <!--<module>benchmarks</module>
     <module>http</module>
     <module>http-tests</module>
     <module>dubbo-rpc</module>
@@ -40,7 +41,7 @@
     <module>kafka-clients</module>
     <module>kafka-streams</module>
     <module>netty-codec-http</module>
-    <module>vertx-web</module>
+    <module>vertx-web</module>-->
   </modules>
 
   <!-- ${project.groupId}:brave version is set in the root pom.
