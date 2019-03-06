@@ -1,4 +1,5 @@
 # brave-sample
+关于brave的源码分析[这里](http://blog.mozhu.org/2017/11/11/zipkin/zipkin-2.html)
 
 关于zipkin的插件支持的示例在[这里](https://github.com/openzipkin/sleuth-webmvc-example),通过分支切换查看
 ```$xslt
