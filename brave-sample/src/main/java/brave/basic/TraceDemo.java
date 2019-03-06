@@ -29,11 +29,11 @@ public class TraceDemo {
                 .build();
 
         Tracer tracer = tracing.tracer();
-        Span span = tracer.newTrace().name("encode").start();
+        Span span = tracer.newTrace().name("encode").start();   //start 开始计时
         try {
             doSomethingExpensive();
         } finally {
-            span.finish();
+            span.finish();                                      //finish 结束计时，并记录一条trace记录
         }
 
 

@@ -15,6 +15,10 @@ import org.springframework.http.client.ClientHttpRequestExecution;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
 import org.springframework.http.client.ClientHttpResponse;
 
+/**
+ * client端的拦截器，处理client端的trace
+ * todo:逻辑分析
+ */
 public final class TracingClientHttpRequestInterceptor implements ClientHttpRequestInterceptor {
   static final Setter<HttpHeaders, String> SETTER = new Setter<HttpHeaders, String>() {
     @Override public void put(HttpHeaders carrier, String key, String value) {
